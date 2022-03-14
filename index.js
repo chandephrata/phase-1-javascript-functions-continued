@@ -1,10 +1,13 @@
-function saturdayFun(){
-    console.log("This Saturday, I want to roller-skate")
-    console.log("This Saturday, I want to bathe my dog!")
+function saturdayFun(activity="roller-skate"){ // define a function using function declaration
+    return `This Saturday, I want to ${activity}!`
 }
-function mondayWork(){
-    console.log("This Monday, I will go to the office")
+const mondayWork = function(activity="go to the office"){ // defining a function using function expression
+    return`This Monday, I will ${activity}.`
+    
 }
-function wrapAdjective(){
-    console.log ("You are %a dedicated programmer%!")
+const wrapAdjective= function(design="*"){
+    return function(adjective="special"){
+    return `You are ${design}${adjective}${design}!`
+    //console.log ("You are %a dedicated programmer%!")
+ }
 }
